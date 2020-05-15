@@ -1,2 +1,5 @@
-# acwander.github.io
-GA Project 1
+# GA Project 1
+
+acwander.github.io
+
+Built with HTML, CSS, JavaScript, and jQuery
