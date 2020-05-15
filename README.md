@@ -6,5 +6,6 @@
 
 ## Issues
 
-1. Getting a CORS error prior to adding cors-anywhere to GET the data from the API.
-   Solution: https://medium.com/@dtkatz/3-ways-to-fix-the-cors-error-and-how-access-control-allow-origin-works-d97d55946d9
+1. Getting a CORS error on API pull
+   - Solution: Send the request to a proxy
+   - Source: https://medium.com/@dtkatz/3-ways-to-fix-the-cors-error-and-how-access-control-allow-origin-works-d97d55946d9
