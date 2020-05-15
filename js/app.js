@@ -38,14 +38,14 @@ $.ajax({
     let currentIndex = 0;
     const numOfImgs = images.length - 1;
 
+    // next button functionality
     $(".next-btn").click(function (e) {
       e.preventDefault();
 
+      // hide current img/info
       $(".carousel-img").children().css("display", "none");
-      $(".beer-name").css("display", "none");
-      $(".beer-style").css("display", "none");
-      $(".beer-abv").css("display", "none");
-      $(".beer-desc").css("display", "none");
+      $(".beer-info").css("display", "none");
+
       if (currentIndex < numOfImgs) {
         currentIndex++;
       } else {
@@ -53,19 +53,51 @@ $.ajax({
       }
       $("<img>").attr("src", images[currentIndex]).prependTo(".carousel-img");
 
-      $('<h2 class="beer-name">')
+      $('<h2 class="beer-name beer-info">')
         .text(name[currentIndex])
         .appendTo("#carousel-info");
 
-      $('<h3 class="beer-style">')
+      $('<h3 class="beer-style beer-info">')
         .text(style[currentIndex])
         .appendTo("#carousel-info");
 
-      $('<h3 class="beer-abv">')
+      $('<h3 class="beer-abv beer-info">')
         .text(abv[currentIndex] + "% ABV")
         .appendTo("#carousel-info");
 
-      $('<p class="beer-desc">')
+      $('<p class="beer-desc beer-info">')
+        .text(desc[currentIndex])
+        .appendTo("#carousel-info");
+    });
+
+    // previous button functionality
+    $(".previous-btn").click(function (e) {
+      e.preventDefault();
+
+      // hide current img/info
+      $(".carousel-img").children().css("display", "none");
+      $(".beer-info").css("display", "none");
+
+      if (currentIndex > 0) {
+        currentIndex--;
+      } else {
+        currentIndex = numOfImgs;
+      }
+      $("<img>").attr("src", images[currentIndex]).prependTo(".carousel-img");
+
+      $('<h2 class="beer-name beer-info">')
+        .text(name[currentIndex])
+        .appendTo("#carousel-info");
+
+      $('<h3 class="beer-style beer-info">')
+        .text(style[currentIndex])
+        .appendTo("#carousel-info");
+
+      $('<h3 class="beer-abv beer-info">')
+        .text(abv[currentIndex] + "% ABV")
+        .appendTo("#carousel-info");
+
+      $('<p class="beer-desc beer-info">')
         .text(desc[currentIndex])
         .appendTo("#carousel-info");
     });
