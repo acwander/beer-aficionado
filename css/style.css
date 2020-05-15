@@ -1,5 +1,5 @@
 * {
-  border: 1px solid gold;
+  /* border: 1px solid gold; */
 }
 
 /* global styles */
@@ -12,28 +12,44 @@ body {
   text-align: center;
 }
 
-h1 {
-  font-size: 4em;
+.container {
+  display: inline-block;
 }
 
-h2 {
-  font-size: 3em;
-}
-
-h3 {
-  font-size: 2.5em;
-}
-
-h4 {
-  font-size: 2.25em;
-}
-
-p {
-  font-size: 2em;
+/* remove all initial styling from a tags */
+a,
+a:hover,
+a:focus,
+a:active {
+  text-decoration: none;
+  color: inherit;
 }
 
 /* header styles */
+#site-title {
+  font-size: 4em;
+}
 
 /* main content styles */
+#carousel > img {
+  width: 35em;
+  height: 35em;
+}
 
 /* footer styles */
+#footer {
+  padding: 0.5em 0;
+  background-color: rgba(0, 0, 0, 0.2);
+}
+
+footer > h3 {
+  font-size: 1.5em;
+}
+
+footer > p {
+  font-size: 1.2em;
+}
+
+.footer-link:hover {
+  text-decoration: underline;
+}
