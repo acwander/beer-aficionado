@@ -1,8 +1,8 @@
 let endpoint = "beers";
 const fixCors = `https://cors-anywhere.herokuapp.com/`;
 const APIKEY = `267e0b1478baa842b500f2a4b17f73c5`;
-// const link = "";
-let link = `${fixCors}https://sandbox-api.brewerydb.com/v2/${endpoint}/?key=${APIKEY}`;
+// let link = `${fixCors}https://sandbox-api.brewerydb.com/v2/${endpoint}/?key=${APIKEY}`;
+const link = "./data.json";
 
 $.ajax({
   type: "GET",
