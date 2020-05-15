@@ -1,22 +1,18 @@
-* {
-  /* border: 1px solid gold; */
-}
+/* fonts */
+@import url("https://fonts.googleapis.com/css2?family=Balsamiq+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap");
 
 /* global styles */
-html {
-  font-size: 10px;
-}
-
 body {
+  font-family: "Balsamiq Sans", cursive;
   margin: auto;
   text-align: center;
 }
 
 .container {
-  display: inline-block;
+  display: flex;
+  flex-direction: column;
 }
 
-/* remove all initial styling from a tags */
 a,
 a:hover,
 a:focus,
@@ -26,55 +22,69 @@ a:active {
 }
 
 /* header styles */
-#site-title {
-  font-size: 4em;
+#header {
+  background-color: black;
+  color: white;
+  height: 6rem;
+}
+
+.site-title {
+  font-size: 3rem;
 }
 
 /* main content styles */
+.carousel-container {
+  display: flex;
+  justify-content: center;
+  border-top: 0.2rem solid salmon;
+  border-bottom: 0.2rem solid salmon;
+}
+
 .carousel-img > img {
-  width: 40em;
-  height: 40em;
+  width: 25rem;
+  height: 25rem;
 }
 
 .carousel-btns {
-  /* flex box */
   display: flex;
   justify-content: center;
 }
 
 .next-btn,
 .previous-btn {
-  margin: 1em;
+  margin: 10rem 2rem;
 }
 
 .beer-name {
   display: inline-block;
-  font-size: 2.5em;
+  font-size: 2.2rem;
 }
 
 .beer-abv,
 .beer-style {
-  font-size: 2em;
+  font-size: 1.8rem;
 }
 
 .beer-desc {
   display: inline-block;
-  width: 70%;
-  font-size: 1.8em;
+  width: 80%;
+  height: 10rem;
+  font-size: 1.2rem;
+  overflow: auto;
 }
 
 /* footer styles */
 #footer {
-  padding: 0.5em 0;
+  padding: 0.5rem 0;
   background-color: rgba(0, 0, 0, 0.2);
 }
 
 footer > h3 {
-  font-size: 1.5em;
+  font-size: 1rem;
 }
 
 footer > p {
-  font-size: 1.2em;
+  font-size: 1rem;
 }
 
 .footer-link:hover {
