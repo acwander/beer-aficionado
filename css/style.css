@@ -31,9 +31,36 @@ a:active {
 }
 
 /* main content styles */
-#carousel > img {
-  width: 35em;
-  height: 35em;
+.carousel-img > img {
+  width: 40em;
+  height: 40em;
+}
+
+.carousel-btns {
+  /* flex box */
+  display: flex;
+  justify-content: center;
+}
+
+.next-btn,
+.previous-btn {
+  margin: 1em;
+}
+
+.beer-name {
+  display: inline-block;
+  font-size: 2.5em;
+}
+
+.beer-abv,
+.beer-style {
+  font-size: 2em;
+}
+
+.beer-desc {
+  display: inline-block;
+  width: 70%;
+  font-size: 1.8em;
 }
 
 /* footer styles */
