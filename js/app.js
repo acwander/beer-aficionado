@@ -10,9 +10,29 @@ $.ajax({
   dataType: "json",
 }).then(
   (data) => {
-    // console.log(data);
+    // functions
+    const cycle = () => {
+      $("<img>").attr("src", images[currentIndex]).prependTo(".carousel-img");
+      $('<h2 class="beer-name beer-info">')
+        .text(name[currentIndex])
+        .appendTo("#carousel-info");
+      $('<h3 class="beer-style beer-info">')
+        .text(style[currentIndex])
+        .appendTo("#carousel-info");
+      $('<h3 class="beer-abv beer-info">')
+        .text(abv[currentIndex] + "% ABV")
+        .appendTo("#carousel-info");
+      $('<p class="beer-desc beer-info">')
+        .text(desc[currentIndex])
+        .appendTo("#carousel-info");
+    };
+
+    const hide = () => {
+      $(".carousel-img").children().css("display", "none");
+      $(".beer-info").css("display", "none");
+    };
+
     const dataArr = data.data;
-    // data arrays
     const name = [];
     const style = [];
     const abv = [];
@@ -27,7 +47,6 @@ $.ajax({
         key.description !== undefined &&
         key.labels !== undefined
       ) {
-        // push data to organized arrays
         name.push(key.nameDisplay);
         style.push(key.style.shortName);
         abv.push(key.abv);
@@ -35,72 +54,44 @@ $.ajax({
         images.push(key.labels.large);
       }
     }
+
     let currentIndex = 0;
     const numOfImgs = images.length - 1;
 
     // next button functionality
     $(".next-btn").click(function (e) {
       e.preventDefault();
-
-      // hide current img/info
-      $(".carousel-img").children().css("display", "none");
-      $(".beer-info").css("display", "none");
-
+      hide();
       if (currentIndex < numOfImgs) {
         currentIndex++;
       } else {
         currentIndex = 0;
       }
-      $("<img>").attr("src", images[currentIndex]).prependTo(".carousel-img");
-
-      $('<h2 class="beer-name beer-info">')
-        .text(name[currentIndex])
-        .appendTo("#carousel-info");
-
-      $('<h3 class="beer-style beer-info">')
-        .text(style[currentIndex])
-        .appendTo("#carousel-info");
-
-      $('<h3 class="beer-abv beer-info">')
-        .text(abv[currentIndex] + "% ABV")
-        .appendTo("#carousel-info");
-
-      $('<p class="beer-desc beer-info">')
-        .text(desc[currentIndex])
-        .appendTo("#carousel-info");
+      cycle();
     });
 
     // previous button functionality
     $(".previous-btn").click(function (e) {
       e.preventDefault();
-
-      // hide current img/info
-      $(".carousel-img").children().css("display", "none");
-      $(".beer-info").css("display", "none");
-
+      hide();
       if (currentIndex > 0) {
         currentIndex--;
       } else {
         currentIndex = numOfImgs;
       }
-      $("<img>").attr("src", images[currentIndex]).prependTo(".carousel-img");
-
-      $('<h2 class="beer-name beer-info">')
-        .text(name[currentIndex])
-        .appendTo("#carousel-info");
-
-      $('<h3 class="beer-style beer-info">')
-        .text(style[currentIndex])
-        .appendTo("#carousel-info");
-
-      $('<h3 class="beer-abv beer-info">')
-        .text(abv[currentIndex] + "% ABV")
-        .appendTo("#carousel-info");
-
-      $('<p class="beer-desc beer-info">')
-        .text(desc[currentIndex])
-        .appendTo("#carousel-info");
+      cycle();
     });
+
+    // // auto cycle
+    // setInterval(() => {
+    //   hide();
+    //   if (currentIndex < numOfImgs) {
+    //     currentIndex++;
+    //   } else {
+    //     currentIndex = 0;
+    //   }
+    //   cycle();
+    // }, 5000);
   },
   (err) => {
     console.log("Error", err);
