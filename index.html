@@ -17,29 +17,40 @@
     <div class="container">
       <div id="header">
         <header>
-          <h1 class="site-title">Beer Database</h1>
+          <nav class="nav-container">
+            <div class="nav-item"><a href="#">Beer Database</a></div>
+            <div class="nav-item">
+              <a href="#how-its-made">How It's Made</a>
+            </div>
+            <div class="nav-item">
+              <a href="#beers">Beers</a>
+            </div>
+            <div class="nav-item">
+              <a href="#footer">About</a>
+            </div>
+          </nav>
         </header>
       </div>
       <div id="main content">
         <div>
-          <h2>How Beer is Made</h2>
-          <h3>Ingredients</h3>
-          <p>
+          <h2 id="how-its-made">How Beer is Made</h2>
+          <h3 class="how-title">Ingredients</h3>
+          <p class="how-paragraph">
             Beer is made from four basic ingredients: Barley, water, hops and
             yeast. The basic idea is to extract the sugars from grains (usually
             barley) so that the yeast can turn it into alcohol and CO2, creating
             beer.
           </p>
-          <h3>Malting</h3>
-          <p>
+          <h3 class="how-title">Step 1: Malting</h3>
+          <p class="how-paragraph">
             The brewing process starts with grains, usually barley (although
             sometimes wheat, rye or other such things.) The grains are harvested
             and processed through a process of heating, drying out and cracking.
             The main goal of malting is to isolate the enzymes needed for
             brewing so that it’s ready for the next step.
           </p>
-          <h3>Mashing</h3>
-          <p>
+          <h3 class="how-title">Step 2: Mashing</h3>
+          <p class="how-paragraph">
             The grains then go through a process known as mashing, in which they
             are steeped in hot, but not boiling, water for about an hour. This
             activates enzymes in the grains that cause it to break down and
@@ -48,18 +59,18 @@
             liquid is called wort. It’s basically unmade beer, sort of like how
             dough is unmade bread.
           </p>
-          <h3>Boiling</h3>
-          <p>
+          <h3 class="how-title">Step 3: Boiling</h3>
+          <p class="how-paragraph">
             The wort is boiled for about an hour while hops and other spices are
             added several times.
           </p>
-          <p>
+          <p class="how-paragraph">
             What are hops? They are the small, green cone-like fruit of a vine
             plant. Hops provide bitterness to balance out all the sugar in the
             wort and provide flavor. They also act as a natural preservative.
           </p>
-          <h3>Fermentation</h3>
-          <p>
+          <h3 class="how-title">Step 4: Fermentation</h3>
+          <p class="how-paragraph">
             Once the hour long boil is over the wort is cooled, strained and
             filtered. It’s then put in a fermenting vessel and yeast is added to
             it. At this point the brewing is complete and the fermentation
@@ -69,8 +80,8 @@
             up all that sugar in the wort and spits out CO2 and alcohol as waste
             products.
           </p>
-          <h3>Bottling & Aging</h3>
-          <p>
+          <h3 class="how-title">Step 5: Bottling & Aging</h3>
+          <p class="how-paragraph">
             You’ve now got alcoholic beer, however it is flat and un-carbonated.
             The flat beer is bottled, at which time it is either artificially
             carbonated like a soda, or if it’s going to be ‘bottle conditioned’
@@ -79,26 +90,32 @@
             months, the beer is ready to drink!
           </p>
         </div>
-        <div class="carousel-container">
-          <!-- previous button -->
-          <div class="carousel-btns previous-btn">
-            <button><</button>
+        <div id="beers">
+          <h2 class="carousel-title">Beers</h2>
+          <p>
+            Use the buttons to display information about a variety of our
+            favorite beers.
+          </p>
+          <div class="carousel-container">
+            <!-- previous button -->
+            <div class="carousel-btns previous-btn">
+              <button><</button>
+            </div>
+            <!-- image -->
+            <div class="carousel-img">
+              <img src="./images/starter-img.jpg" alt="" />
+            </div>
+            <!-- next button -->
+            <div class="carousel-btns next-btn">
+              <button>></button>
+            </div>
           </div>
-          <!-- image -->
-          <div class="carousel-img">
-            <!-- TODO: Remove placeholder image -->
-            <img src="./images/starter-img.jpg" alt="" />
-          </div>
-          <!-- next button -->
-          <div class="carousel-btns next-btn">
-            <button>></button>
-          </div>
+          <div id="carousel-info"></div>
         </div>
-        <div id="carousel-info"></div>
       </div>
       <div id="footer">
         <footer>
-          <h3>Drink Responsibly</h3>
+          <h3>Enjoy Responsibly</h3>
           <p>
             Created using
             <a

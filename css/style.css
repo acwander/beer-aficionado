@@ -2,6 +2,10 @@
 @import url("https://fonts.googleapis.com/css2?family=Balsamiq+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap");
 
 /* global styles */
+html {
+  font-size: 10px;
+}
+
 body {
   font-family: "Balsamiq Sans", cursive;
   margin: auto;
@@ -23,21 +27,58 @@ a:active {
 
 /* header styles */
 #header {
-  background-color: black;
+  background-color: lightseagreen;
   color: white;
-  height: 6rem;
+  height: 3.5rem;
+  position: fixed;
+  display: inline-block;
+  width: 100%;
+  text-transform: uppercase;
 }
 
-.site-title {
-  font-size: 3rem;
+.nav-container {
+  display: flex;
+  justify-content: space-around;
+}
+
+.nav-item {
+  margin: 0.35rem 0;
+  font-size: 2.3rem;
+}
+
+.nav-item:hover {
+  color: grey;
 }
 
 /* main content styles */
+#how-its-made {
+  margin-top: 5rem;
+  font-size: 2rem;
+  text-transform: uppercase;
+  text-decoration: underline;
+}
+
+.how-title {
+  font-size: 1.8rem;
+}
+
+.how-paragraph {
+  display: inline-block;
+  width: 80%;
+  font-size: 1.5rem;
+}
+
+.carousel-title {
+  font-size: 2rem;
+  text-transform: uppercase;
+  text-decoration: underline;
+  border-top: 2px solid lightseagreen;
+  padding-top: 2rem;
+}
+
 .carousel-container {
   display: flex;
   justify-content: center;
-  border-top: 0.2rem solid salmon;
-  border-bottom: 0.2rem solid salmon;
 }
 
 .carousel-img > img {
@@ -57,7 +98,7 @@ a:active {
 
 .beer-name {
   display: inline-block;
-  font-size: 2.2rem;
+  font-size: 2rem;
 }
 
 .beer-abv,
@@ -68,8 +109,8 @@ a:active {
 .beer-desc {
   display: inline-block;
   width: 80%;
-  height: 10rem;
-  font-size: 1.2rem;
+  height: 20rem;
+  font-size: 1.5rem;
   overflow: auto;
 }
 
