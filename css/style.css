@@ -47,7 +47,7 @@ a:active {
 }
 
 .nav-item:hover {
-  color: grey;
+  color: gray;
 }
 
 /* main content styles */
@@ -89,6 +89,15 @@ a:active {
 .carousel-btns {
   display: flex;
   justify-content: center;
+}
+
+.fas {
+  font-size: 3rem;
+  color: lightseagreen;
+}
+
+.fas:hover {
+  color: gray;
 }
 
 .next-btn,
