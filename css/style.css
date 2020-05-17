@@ -10,6 +10,8 @@ body {
   font-family: "Balsamiq Sans", cursive;
   margin: auto;
   text-align: center;
+  background-color: black;
+  color: white;
 }
 
 .container {
@@ -26,67 +28,75 @@ a:active {
 }
 
 /* header styles */
-#header {
-  background-color: lightseagreen;
-  color: white;
-  height: 3.5rem;
-  position: fixed;
-  display: inline-block;
-  width: 100%;
-  text-transform: uppercase;
-}
-
 .nav-container {
   display: flex;
   justify-content: space-around;
+  background-color: seagreen;
+  position: fixed;
+  width: 100%;
 }
 
 .nav-item {
-  margin: 0.35rem 0;
-  font-size: 2.3rem;
+  font-size: 2rem;
+  text-transform: uppercase;
+  color: white;
+  text-shadow: 0.15rem 0.15rem black;
 }
 
 .nav-item:hover {
-  color: gray;
+  color: grey;
+}
+
+.banner {
+  background-image: url(/images/banner.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 60rem;
+  width: 100%;
 }
 
 /* mobile styling */
 @media (max-width: 600px) {
   .nav-item {
-    margin: 1rem 0;
     font-size: 1.2rem;
+  }
+  .banner {
+    height: 25rem;
   }
 }
 
 /* main content styles */
 #how-its-made {
-  margin-top: 5rem;
-  font-size: 2rem;
+  font-size: 2.6rem;
   text-transform: uppercase;
   text-decoration: underline;
+  color: lightskyblue;
 }
 
 .how-title {
-  font-size: 1.8rem;
+  font-size: 2rem;
+  color: seagreen;
 }
 
 .how-paragraph {
   display: inline-block;
   width: 80%;
-  font-size: 1.5rem;
+  font-size: 1.8rem;
 }
 
 .carousel-title {
-  font-size: 2rem;
+  font-size: 2.6rem;
   text-transform: uppercase;
   text-decoration: underline;
-  border-top: 2px solid lightseagreen;
-  padding-top: 2rem;
+  border-top: 2px solid seagreen;
+  padding-top: 3rem;
+  color: lightskyblue;
 }
 
 .carousel-container {
   display: flex;
   justify-content: center;
+  width: 100%;
 }
 
 .carousel-img > img {
@@ -101,7 +111,7 @@ a:active {
 
 .fas {
   font-size: 3rem;
-  color: lightseagreen;
+  color: seagreen;
 }
 
 .fas:hover {
@@ -115,30 +125,31 @@ a:active {
 
 .beer-name {
   display: inline-block;
-  font-size: 2rem;
+  font-size: 2.2rem;
 }
 
 .beer-abv,
 .beer-style {
-  font-size: 1.8rem;
+  font-size: 2rem;
 }
 
 .beer-desc {
   display: inline-block;
   width: 80%;
   height: 20rem;
-  font-size: 1.5rem;
+  font-size: 1.8rem;
   overflow: auto;
 }
 
 /* footer styles */
 #footer {
   padding: 0.5rem 0;
-  background-color: rgba(0, 0, 0, 0.2);
+  background-color: seagreen;
+  text-shadow: 0.15rem 0.15rem black;
 }
 
 footer > h3 {
-  font-size: 1rem;
+  font-size: 1.2rem;
 }
 
 footer > p {
@@ -146,5 +157,5 @@ footer > p {
 }
 
 .footer-link:hover {
-  text-decoration: underline;
+  color: grey;
 }
