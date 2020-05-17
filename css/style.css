@@ -50,6 +50,14 @@ a:active {
   color: gray;
 }
 
+/* mobile styling */
+@media (max-width: 600px) {
+  .nav-item {
+    margin: 1rem 0;
+    font-size: 1.2rem;
+  }
+}
+
 /* main content styles */
 #how-its-made {
   margin-top: 5rem;
