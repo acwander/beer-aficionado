@@ -4,6 +4,16 @@ const APIKEY = `267e0b1478baa842b500f2a4b17f73c5`;
 let link = `${fixCORS}https://sandbox-api.brewerydb.com/v2/${endpoint}/?key=${APIKEY}`;
 // const link = "/data.json";
 
+// toggle info paragraphs
+$(".how-title").click(function (e) {
+  e.preventDefault();
+  $(e.currentTarget)
+    .next()
+    .toggle(() => {
+      $("e.currentTarget").css("display", "inline-block");
+    });
+});
+
 $.ajax({
   type: "GET",
   url: link,

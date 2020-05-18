@@ -74,14 +74,25 @@ a:active {
 }
 
 .how-title {
+  border-bottom: 1px solid seagreen;
   font-size: 2rem;
-  color: seagreen;
+  color: white;
+  width: 50%;
+  margin: auto;
+  padding-top: 3rem;
+}
+
+.how-title:hover {
+  color: grey;
+  cursor: pointer;
 }
 
 .how-paragraph {
-  display: inline-block;
+  display: none;
+  margin: auto;
   width: 80%;
   font-size: 1.8rem;
+  border: 1px solid seagreen;
 }
 
 .carousel-title {
