@@ -4,6 +4,22 @@ const APIKEY = `267e0b1478baa842b500f2a4b17f73c5`;
 let link = `${fixCORS}https://sandbox-api.brewerydb.com/v2/${endpoint}/?key=${APIKEY}`;
 // const link = "/data.json";
 
+// cycle banner images every 5 seconds
+const images = ["banner1.jpg", "banner2.jpg", "banner3.jpg"];
+let currentImage = images[0];
+setInterval(() => {
+  if (images[0] == currentImage) {
+    $(".banner-img").attr("src", `/images/${images[1]}`);
+    currentImage = images[1];
+  } else if (images[1] == currentImage) {
+    $(".banner-img").attr("src", `/images/${images[2]}`);
+    currentImage = images[2];
+  } else {
+    $(".banner-img").attr("src", `/images/${images[0]}`);
+    currentImage = images[0];
+  }
+}, 5000);
+
 // toggle info paragraphs
 $(".how-title").click(function (e) {
   e.preventDefault();
