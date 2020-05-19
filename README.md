@@ -4,7 +4,7 @@
 
 # Project Description
 
-This is a simple website with functionality throughout each section including: a sticky nav, auto changing banner images, toggling how it's made information, and a carousel. As the user clicks next or previous buttons surrounding the carousel, it will display the respective image, name, style, alcohol content, and description of the beer.
+This is a simple website for beer enthusiasts with functionality throughout each section including: a sticky nav, auto changing banner images, toggling display of how it's made information, and a carousel. As the user clicks next or previous buttons surrounding the carousel, it will display the respective image, name, style, alcohol content, and description.
 
 # More Ideas
 
@@ -17,12 +17,13 @@ This is a simple website with functionality throughout each section including: a
 - CSS
 - JavaScript
 - jQuery
+- [Brewery DB](https://www.brewerydb.com/)
 
 # Issues and Resolutions
 
 ## Roadblocks
 
-- Getting a CORS error on API pull. I had to send my get request through a proxy found in this article: https://medium.com/@dtkatz/3-ways-to-fix-the-cors-error-and-how-access-control-allow-origin-works-d97d55946d9.
+- Getting a CORS error on API pull. I had to send my get request through a proxy found in this [article](https://medium.com/@dtkatz/3-ways-to-fix-the-cors-error-and-how-access-control-allow-origin-works-d97d55946d9).
 - Limited information available using the free version of BreweryDB.
 
 ## Wins
@@ -31,13 +32,13 @@ This is a simple website with functionality throughout each section including: a
 
 # Acknowledgments
 
-## API
-
-- BreweryDB: https://www.brewerydb.com/
-
 ## Images
 
-- Ladies Photo by Elevate on Unsplash
-- Cheers Photo by Fred Moon on Unsplash
-- Sampler Photo by Tatiana Rodriguez on Unsplash
-- Beer Wall Photo by Christin Hume on Unsplash
+- [Photo by Elevate on Unsplash](https://unsplash.com/photos/nYgy58eb9aw)
+- [Photo by Fred Moon on Unsplash](https://unsplash.com/photos/0yqa0rMCsYk)
+- [Photo by Tatiana Rodriguez on Unsplash](https://unsplash.com/photos/D_Rfjj3XV8M)
+- [Photo by Christin Hume on Unsplash](https://unsplash.com/photos/08tX2fsuSLg)
+
+## How Beer is Made
+
+- [beeriety.com](http://blog.beeriety.com/2009/07/06/how-beer-is-made/)
