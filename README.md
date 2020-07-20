@@ -1,6 +1,6 @@
 # Beer Aficionado
 
-### Live link: https://acwander.github.io/
+### Live link: https://shielded-basin-76520.herokuapp.com/
 
 # Project Description
 
